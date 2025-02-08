@@ -1,0 +1,21 @@
+footer {
+  background: var(--clr-bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  width: 100%;
+  margin-inline: auto;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: light;
+}
+
+.footer-links a {
+  color: var(--clr-neutral-900);
+}
+
+.footer-links a:hover {
+  color: var(--clr-accent-neon);
+}

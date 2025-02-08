@@ -1,0 +1,40 @@
+.loader {
+  background: var(--clr-bg-primary);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeout 700ms linear forwards 3s;
+  opacity: 1;
+
+  img {
+    width: 84px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 6px;
+    top: 56%;
+    left: 44%;
+    border-radius: 12px;
+    background: rgb(255, 255, 255);
+    animation: load 3s linear forwards;
+  }
+}
+
+@keyframes load {
+  to {
+    width: 140px;
+  }
+}
+@keyframes fadeout {
+  to {
+    opacity: 0;
+  }
+}
