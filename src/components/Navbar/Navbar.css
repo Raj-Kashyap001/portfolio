@@ -1,8 +1,7 @@
 header {
   width: 100%;
-  background: var(--clr-navbar);
   display: flex;
-  backdrop-filter: blur(var(--blur));
+  background: transparent;
   padding-block: var(--spacing-normal);
   align-items: center;
   justify-content: space-between;
@@ -11,7 +10,12 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  transition: all 0.3s ease;
+  &.scrolled {
+    background: var(--clr-navbar);
+    backdrop-filter: blur(var(--blur));
+    z-index: 999;
+  }
 }
 
 .logo {
@@ -65,6 +69,9 @@ header {
 }
 
 @media (max-width: 600px) {
+  header {
+    position: fixed;
+  }
   .toggle-mobile-nav {
     display: block;
   }
@@ -76,18 +83,20 @@ header {
     backdrop-filter: blur(12px);
     gap: 0;
     width: 100%;
-    top: -500%;
+    top: -1200%;
+    height: 100svh;
     z-index: -99;
     left: 0;
     transition: top 0.3s ease;
   }
 
   .navbar.open .navlinks {
-    top: 3rem;
+    top: 3.5rem;
   }
 
   li {
     width: 100%;
+    font-size: 1.5rem;
     text-align: center;
   }
 

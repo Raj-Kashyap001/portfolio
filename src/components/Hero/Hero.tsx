@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
         </p>
 
         <a
-          href="https://github.com/Raj-Kashyap001/My-Resume/raw/refs/heads/main/Raj%20Kashyap's%20Resume.docx"
+          href="https://drive.google.com/uc?export=download&id=1u5aL4fizzY0myrxecdxLpLqn8pl1Kwa2WECXyKw5dAI"
           className="btn"
         >
           Get Resume

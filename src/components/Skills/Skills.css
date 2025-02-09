@@ -126,12 +126,18 @@
 }
 
 @media (max-width: 480px) {
+  #Skills {
+    height: 90vh;
+    padding-block: 0px !important;
+  }
+
   .select-skill-to-display {
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    margin-bottom: 2rem;
   }
 
   .skill-card {
-    padding: 0.75rem;
+    padding: 1rem;
   }
 
   .proficiency-table {

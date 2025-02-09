@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Navbar.css";
 import { FaBars } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
@@ -13,6 +13,22 @@ const Navbar: React.FC = () => {
   const [activeLink, setActiveLink] = useState("Home");
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const toggleActive = (link: string) => {
     setActiveLink(link);
   };
@@ -22,7 +38,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header>
+    <header className={`header ${isScrolled && "scrolled"}`}>
       <a href="/">
         <img className="logo" src="/portfolio/icons/logo.svg" alt="Raj" />
       </a>
@@ -33,7 +49,10 @@ const Navbar: React.FC = () => {
               <a
                 className={`nav-link ${link === activeLink ? "active" : ""}`}
                 href={`#${link}`}
-                onClick={() => toggleActive(link)}
+                onClick={() => {
+                  toggleActive(link);
+                  setMobileNavOpen(false);
+                }}
               >
                 {link}
               </a>

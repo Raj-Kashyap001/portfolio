@@ -3,8 +3,9 @@
   height: 100vh;
 }
 .about-content {
+  width: 100%;
   background: var(--clr-bg-secondary);
-  padding: 5rem 4rem;
+  padding: clamp(2rem, 5vw, 4rem);
   border-radius: var(--radius);
 }
 
@@ -18,8 +19,8 @@
 .profile-image {
   border-radius: 100%;
   overflow: hidden;
-  min-width: 250px;
-  max-width: 150px;
+  min-width: 240px;
+  max-width: 140px;
   aspect-ratio: 1;
 }
 
@@ -70,11 +71,16 @@
   .about-content {
     padding: 1rem;
   }
-  .profile-image {
-    width: 100px;
+  .about-me-card {
+    padding: 0;
+    gap: 0;
+  }
+  .about-me-card .profile-image {
+    scale: 0.7;
   }
   .profile-details .name {
     font-size: 2rem;
+    margin-top: 0;
   }
   .about-text {
     font-size: 12px;

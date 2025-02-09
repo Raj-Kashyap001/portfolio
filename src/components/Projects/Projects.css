@@ -89,3 +89,9 @@
 .project-card:hover {
   outline: 3px solid var(--clr-accent-neon);
 }
+
+@media (max-width: 480px) {
+  #Projects {
+    padding-block: 0px !important;
+  }
+}
