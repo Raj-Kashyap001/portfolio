@@ -1,5 +1,5 @@
 .hero {
-  height: 100vh;
+  height: 100vmax;
   display: flex;
   align-items: center;
   justify-content: start;
