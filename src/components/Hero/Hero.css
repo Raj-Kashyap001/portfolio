@@ -1,7 +1,5 @@
-/* FIXME: Content gets hidden on mobile's landscape mode */
-
 .hero {
-  height: 100vmax;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: start;

@@ -83,7 +83,7 @@ header {
     backdrop-filter: blur(12px);
     gap: 0;
     width: 100%;
-    top: -1200%;
+    top: -1200px;
     height: 100svh;
     z-index: -99;
     left: 0;
