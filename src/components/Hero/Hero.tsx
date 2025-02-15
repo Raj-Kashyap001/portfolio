@@ -14,8 +14,9 @@ const Hero: React.FC = () => {
         </p>
 
         <a
-          href="https://drive.google.com/uc?export=download&id=1u5aL4fizzY0myrxecdxLpLqn8pl1Kwa2WECXyKw5dAI"
+          href="/portfolio/docs/resume.docx"
           className="btn"
+          download={"Raj Kashyap's Resume"}
         >
           Get Resume
         </a>
