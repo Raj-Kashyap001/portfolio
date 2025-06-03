@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
             <li className="nav-item" key={link}>
               <a
                 className={`nav-link ${link === activeLink ? "active" : ""}`}
-                href={`#${link}`}
+                href={link === "Home" ? "/" : `#${link}`}
                 onClick={() => {
                   toggleActive(link);
                   setMobileNavOpen(false);

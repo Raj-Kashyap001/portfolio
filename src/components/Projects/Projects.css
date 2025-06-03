@@ -18,8 +18,7 @@
 
 .project-card {
   width: 100%;
-  min-width: 320px;
-  /* max-width: 340px; */
+  min-width: 280px;
   height: fit-content;
   padding: 1rem;
   margin-block: 1rem;
@@ -93,5 +92,17 @@
 @media (max-width: 480px) {
   #Projects {
     padding-block: 0px !important;
+  }
+
+  .project-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .project-preview img {
+    height: 200px;
+  }
+
+  .about-text {
+    font-size: 14px;
   }
 }

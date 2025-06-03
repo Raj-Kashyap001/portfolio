@@ -29,9 +29,8 @@ const Hero: React.FC = () => {
           variants={fadeInAnimation}
           transition={{ duration: 0.5, delay: 0.25 }}
         >
-          I’m a passionate and versatile Full Stack Developer with expertise in
-          web development, AI integration, and modern design principles. With a
-          strong foundation in both front-end and back-end technologies.
+          I’m a Full Stack Developer passionate about web development, AI, and
+          modern design. I love building things that make a difference.
         </motion.p>
 
         <a

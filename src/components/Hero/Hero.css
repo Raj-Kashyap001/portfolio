@@ -99,6 +99,22 @@
   .hero {
     flex-direction: column;
     padding-top: 1rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/images/hero.webp");
+    background-size: cover;
+    background-position: center;
+    animation: scaleIn 500ms forwards;
+  }
+
+  @keyframes scaleIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
   }
 
   .hero-content {

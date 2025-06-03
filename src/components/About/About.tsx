@@ -13,19 +13,12 @@ const About: React.FC = () => {
             />
           </div>
           <div className="profile-details flow">
-            <h2 className="name">
-              Raj Kashayp
-              <hr />
-            </h2>
+            <h2 className="name">Raj Kashayp</h2>
             <p className="about-text">
-              I’m Raj Kashyap, a 22-year-old freelance full-stack developer. I
-              love experimenting with new ideas and creating innovative
-              solutions. I actively build and contribute to open-source
-              projects, constantly learning and sharing my knowledge with the
-              developer community. As a Linux enthusiast, I enjoy customizing
-              and optimizing my workflow while exploring new tools and
-              technologies. If you're looking for a dedicated developer who
-              loves problem-solving and innovation, let's connect!
+              I’m Raj Kashyap, a 22-year-old freelance full-stack developer
+              passionate about creating innovative solutions. I contribute to
+              open-source projects and enjoy exploring new technologies. Let's
+              connect!
             </p>
             <div className="social-links ">
               <a href="https://github.com/Raj-Kashyap001">
